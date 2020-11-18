@@ -1,0 +1,27 @@
+/* *************************** SOCIAL-ICON STYLES *************************** */
+.icon-social {
+  height: 20px;
+  fill: $col_white;
+  border: 1px solid $col_white;
+  border-radius: 50%;
+  padding: 0.35em;
+  cursor: pointer;
+}
+
+.social-icon {
+  padding: 1em;
+  text-align: center;
+  margin-top: 25px;
+  svg {
+    margin-left: 10px;
+    &:hover {
+      fill: $col_pink;
+      border: 1px solid $col_pink;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.copyright {
+  margin-top: 20px;
+}

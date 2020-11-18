@@ -1,0 +1,22 @@
+/* ******************************* BASE STYLES ****************************** */
+// body fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+// Heading fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  font: 400 18px/1.5 'Open Sans', sans-serif;
+  color: $col_dark_cyan;
+}
+
+.wrap {
+  @media #{$break-l} {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1120px;
+  }
+}
+
+img {
+  max-width: 100%;
+}

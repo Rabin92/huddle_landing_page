@@ -1,0 +1,9 @@
+/* ******************************* NAV STYLES ******************************* */
+.navbar {
+  @include flexy($j-content: space-between, $a-items: $text-center);
+  margin: 15px 0 65px;
+  text-align: $text-center;
+  + .header-content {
+    margin: 20px 0;
+  }
+}

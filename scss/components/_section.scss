@@ -1,0 +1,40 @@
+/* ***************************** SECTION STYLES ***************************** */
+.section {
+  @media #{$break-m} {
+    text-align: initial;
+  }
+  padding: 1em;
+  margin-top: 65px;
+  text-align: $text-center;
+}
+
+.card {
+  @media #{$break-m} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px;
+    padding: 2.9em 4.85em 2.9em;
+  }
+  padding: 2.9em 1em 2.9em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  h2 {
+    margin: 50px 0 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  p {
+    color: $col_gray_blue;
+  }
+  + .card {
+    margin: 50px 0;
+  }
+}
+
+.card-img {
+  grid-column: 2/3;
+}
+
+.card-content {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}

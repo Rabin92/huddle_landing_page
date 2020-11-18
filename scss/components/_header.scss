@@ -1,0 +1,47 @@
+/* ********************************* HEADER ********************************* */
+.header {
+  @media #{$break-m} {
+    background-image: url(../images/bg-hero-desktop.svg);
+    text-align: initial;
+  }
+  @include flexy($f-dir: column);
+  background-image: url(../images/bg-hero-mobile.svg);
+  background-color: $col_pale_cyan;
+  text-align: $text-center;
+  padding: 1em;
+
+  &-content {
+    @media #{$break-m} {
+      max-width: initial;
+    }
+    @include flexy($f-dir: column, $a-self: $text-center);
+    max-width: 400px;
+    > h1 {
+      @media #{$break-m} {
+        font-size: 2.1em;
+      }
+      margin-bottom: 30px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  &-svg {
+    @media #{$break-m} {
+      @include flexy($a-self: $text-center);
+      margin-top: initial;
+    }
+    margin-top: 50px;
+  }
+}
+
+.grid-container {
+  @media #{$break-m} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 70px;
+  }
+}
