@@ -39,7 +39,7 @@ footer {
 
 .contact {
   @media #{$break-m} {
-    @include flexy($j-content: space-around, $a-items: $text-center);
+    @include flexy($j-content: space-between, $a-items: $text-center);
   }
   padding: 180px 1em 0;
   color: $col_white;
