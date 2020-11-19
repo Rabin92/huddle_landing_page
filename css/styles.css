@@ -487,7 +487,7 @@ img {
 .card {
   padding: 2.9em 1em 2.9em;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 768px) {
   .card {
