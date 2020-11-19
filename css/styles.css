@@ -495,11 +495,17 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 150px;
     padding: 2.9em 4.85em 2.9em;
+    align-items: center;
   }
 }
 .card h2 {
   margin: 50px 0 10px;
   font-family: "Poppins", sans-serif;
+}
+@media (min-width: 768px) {
+  .card h2 {
+    margin: 10px 0;
+  }
 }
 .card p {
   color: #808d99;
@@ -640,14 +646,7 @@ footer {
   padding: 180px 1em 0;
   color: #fff;
 }
-@media (min-width: 768px) {
-  .contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-.contact div .svg-logo {
+.contact .svg-logo {
   margin-bottom: 30px;
 }
 
@@ -663,9 +662,10 @@ footer {
 .about-sec {
   margin-top: 50px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about-sec {
     display: none;
+    margin-top: revert;
   }
 }
 .about-sec a {
@@ -679,9 +679,17 @@ footer {
 .about-sec-lrg-screen {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about-sec-lrg-screen {
     display: initial;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
