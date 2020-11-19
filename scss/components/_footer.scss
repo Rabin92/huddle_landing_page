@@ -38,16 +38,11 @@ footer {
 }
 
 .contact {
-  @media #{$break-m} {
-    @include flexy($j-content: space-between, $a-items: $text-center);
-  }
   padding: 180px 1em 0;
   color: $col_white;
 
-  div {
-    .svg-logo {
-      margin-bottom: 30px;
-    }
+  .svg-logo {
+    margin-bottom: 30px;
   }
 }
 
@@ -60,8 +55,9 @@ footer {
 }
 
 .about-sec {
-  @media #{$break-m} {
+  @media #{$break-l} {
     display: none;
+    margin-top: revert;
   }
   margin-top: 50px;
   a {
@@ -73,9 +69,15 @@ footer {
     }
   }
   &-lrg-screen {
-    @media #{$break-m} {
+    @media #{$break-l} {
       display: initial;
     }
     display: none;
+  }
+}
+
+.flex-container {
+  @media #{$break-l} {
+    @include flexy($j-content: space-between, $a-items: $text-center);
   }
 }
